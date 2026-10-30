@@ -1,0 +1,31 @@
+{
+  "id": "nons-plugin-template",
+  "name": "Nons 插件模板",
+  "description": "可直接开发和构建的 Nons 前端插件模板。",
+  "version": "0.1.0",
+  "frontend": "ui.mjs",
+  "permissions": [
+    "ui"
+  ],
+  "engines": {
+    "app": "^1.0.0",
+    "pluginApi": "^2.0.0",
+    "uiApi": "^2.0.0"
+  },
+  "contributes": {
+    "pages": [
+      {
+        "id": "home",
+        "path": "/",
+        "export": "HomePage"
+      }
+    ],
+    "navigation": [
+      {
+        "id": "home-entry",
+        "label": "插件模板",
+        "page": "home"
+      }
+    ]
+  }
+}
